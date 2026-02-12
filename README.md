@@ -1,81 +1,98 @@
 # 💼 Salary Predictor using Linear Regression
 
-A machine learning project that predicts salary based on years of experience using Linear Regression implemented from scratch.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+Predicting salary based on years of experience using Linear Regression implemented **from scratch** (without sklearn).
 
 ![Regression Line](images/regression_line.png)
 
-## 📌 Overview
+## 📌 What This Project Demonstrates
 
-This project demonstrates:
-- Linear Regression from scratch (without sklearn)
-- Gradient Descent optimization
-- Cost function implementation
-- Data visualization
+- ✅ Linear Regression from scratch
+- ✅ Gradient Descent optimization
+- ✅ Cost function implementation
+- ✅ Data visualization with Matplotlib
 
 ## 📊 Dataset
 
-- **Source**: [Kaggle - Salary Dataset](https://www.kaggle.com/datasets/abhishek14398/salary-dataset-simple-linear-regression)
-- **Features**: Years of Experience
-- **Target**: Salary
-- **Samples**: 30
+| Property | Value |
+|----------|-------|
+| Source | [Kaggle](https://www.kaggle.com/datasets/abhishek14398/salary-dataset-simple-linear-regression) |
+| Feature | Years of Experience |
+| Target | Salary |
+| Samples | 30 |
 
-## 🧠 Model
+## 📈 Results
 
-The model uses the equation:
-Salary = w × YearsExperience + b
-
-
-Where:
-- `w` = weight (slope)
-- `b` = bias (intercept)
-
-### Training Results
-
+### Model Performance
 | Parameter | Value |
 |-----------|-------|
 | Weight (w) | 9449.96 |
 | Bias (b) | 25792.20 |
-| Iterations | 1000 |
-| Learning Rate | 0.01 |
 
-## 📈 Visualizations
+### Visualizations
 
-### Cost vs. Iterations
-![Cost Plot](images/cost_plot.png)
+<p align="center">
+  <img src="images/cost_plot.png" width="600">
+</p>
 
-### Prediction Example
-![Prediction](images/prediction_example.png)
+<p align="center">
+  <img src="images/prediction_example.png" width="600">
+</p>
 
 ## 🚀 How to Run
 
-1. **Clone the repository**
-   git clone https://github.com/oqaili1/salary-predictor.git
-   cd salary-predictor
-   
-2. **Create virtual envirnoment**
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+```bash
+# Clone the repository
+git clone https://github.com/oqaili1/Salary-Predictor.git
+cd Salary-Predictor
 
-3. **Install dependencies**
-    pip install -r requirements.txt
-    
-4. **Run the model**
-    cd src
-     python model.py
+# Install dependencies
+pip install -r requirements.txt
 
+# Run the model
+cd src
+python model.py
+
+📁 Project Structure
+
+text
+
+Salary-Predictor/
+├── data/
+│   └── Salary_Data.csv
+├── src/
+│   ├── model.py
+│   └── visualize.py
+├── images/
+│   ├── cost_plot.png
+│   ├── regression_line.png
+│   └── prediction_example.png
+├── README.md
+├── requirements.txt
+└── .gitignore
 
 🛠️ Built With
 
-    Python
+    Python 3.x
     NumPy
     Pandas
     Matplotlib
 
+📚 What I Learned
+
+    Implementing Gradient Descent algorithm
+    Understanding cost function optimization
+    Data visualization techniques
+    Project organization best practices
+
 👤 Author
+
+oqaili1
 
     GitHub: @oqaili1
 
 📄 License
 
 This project is licensed under the MIT License.
-
